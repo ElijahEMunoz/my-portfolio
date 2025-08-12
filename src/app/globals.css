@@ -40,13 +40,6 @@ body {
   transform: rotateY(180deg);
 }
 
-
-
-
-
-
-
-
 /* === ✨ Optional Glow Pulse Animation (if needed later) === */
 @keyframes pulseGlow {
   0%, 100% {
@@ -88,4 +81,13 @@ body {
 
 .glow-faint {
     animation: faintGlow 6s ease-in-out infinite;
+}
+
+@keyframes brandGlow {
+  0%, 100% { text-shadow: 0 0 6px rgba(59,130,246,.35), 0 0 12px rgba(147,51,234,.25); }
+  50%      { text-shadow: 0 0 10px rgba(59,130,246,.55), 0 0 18px rgba(147,51,234,.35); }
+}
+.brand-glow {
+  color: #fff;
+  animation: brandGlow 3.5s ease-in-out infinite;
 }

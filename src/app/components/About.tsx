@@ -19,7 +19,7 @@ export default function About() {
         {/* Profile Image */}
         <div className="md:w-1/3 flex justify-center">
           <Image
-            src="/webpf.png" // update with your actual filename inside /public
+            src="/grad2.png" // update with your actual filename inside /public
             alt="Elijah Munoz"
             width={300}
             height={300}

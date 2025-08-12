@@ -11,10 +11,7 @@ export default function ProjectsCarousel() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
-      slides: {
-        perView: 1,
-        spacing: 16,
-      },
+      slides: { perView: 1, spacing: 16 },
       slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel);
       },
@@ -121,10 +118,9 @@ export default function ProjectsCarousel() {
                       />
                     </div>
 
-                    <h3 className="text-4xl font-bold text-white text-center mb-0">
-                      {project.title}
-                    </h3>
-                    <div className = "mt-1">
+                    <h3 className="text-4xl font-bold text-white text-center mb-0">{project.title}</h3>
+
+                    <div className="mt-1">
                       <p className="text-gray-400 text-base text-center mb-0">Tools Used:</p>
                       <div className="flex justify-center gap-3 text-6xl text-gray-300 mt-1">
                         {project.tech.map((icon, i) => (
@@ -136,18 +132,22 @@ export default function ProjectsCarousel() {
                         ))}
                       </div>
                     </div>
-
-
                   </div>
 
                   {/* Back */}
                   <div className="absolute inset-0 rotate-y-180 backface-hidden p-6 flex flex-col justify-between text-center">
                     <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">{project.title}</h3>
-                      <p className="text-gray-400 text-sm mb-4">{project.description}</p>
-                      <p className="text-gray-400 mb-4">📅 Built in {project.year}</p>
-                      <p className="text-gray-400 text-sm mb-1">Tools Used:</p>
-                      <div className="flex justify-center gap-4 text-5xl text-gray-300">
+                      <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">{project.title}</h3>
+
+                      <p className="text-gray-300 text-base md:text-lg leading-relaxed mb-6">
+                        {project.description}
+                      </p>
+
+                      <p className="text-gray-400 text-sm md:text-base mb-5">📅 Built in {project.year}</p>
+
+                      <p className="text-gray-400 text-sm md:text-base mb-2">Tools Used:</p>
+
+                      <div className="flex justify-center gap-4 text-5xl md:text-6xl text-gray-300">
                         {project.tech.map((icon, i) => (
                           <Icon
                             key={i}
@@ -157,18 +157,19 @@ export default function ProjectsCarousel() {
                         ))}
                       </div>
                     </div>
-                    <div className="flex gap-3 justify-center mt-4">
+
+                    <div className="flex gap-4 justify-center mt-6">
                       <a
                         href={project.codeLink}
-                        className="bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 text-white text-sm"
+                        className="bg-blue-600/90 hover:bg-blue-600 px-6 md:px-7 py-3 md:py-3.5 rounded-lg text-white text-base md:text-lg font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400/60"
                       >
                         View Code
                       </a>
                       <a
                         href={project.demoLink}
-                        target ="_blank"
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="border border-white px-4 py-2 rounded hover:bg-white hover:text-black text-sm"
+                        className="border-2 border-white/80 hover:border-white bg-transparent hover:bg-white/95 hover:text-black px-6 md:px-7 py-3 md:py-3.5 rounded-lg text-white text-base md:text-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
                       >
                         {project.demoLabel}
                       </a>

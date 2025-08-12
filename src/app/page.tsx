@@ -20,22 +20,22 @@ export default function Home() {
             Elijah Munoz <span className="inline-block animate-bounce">🚀</span>
           </h1>
           <h2 className="text-2xl text-blue-400 font-semibold">
-            Software Engineer | Full Stack Developer | AR + AI Enthusiast
+            Software Engineer | Full Stack Developer | 
           </h2>
           <p className="text-gray-300">
-            I build blazing-fast and elegant web apps using React, Next.js, and Tailwind CSS — powered by curiosity and creativity.
+            I enjoy building and creating elegant web apps using React, Next.js, and Tailwind CSS powered by curiosity and creativity.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
             <a
-              href="/Elijah_Munoz_Resume.pdf"
+              href="/Tech Resume 2025-2.pdf"
               download
-              className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-5 py-2 rounded-md shadow hover:opacity-90 transition"
+              className="bg-gradient-to-r from-blue-600 to-blue-400 text-white px-8 py-4 rounded-md shadow hover:opacity-90 transition"
             >
               Download CV
             </a>
             <a
               href="#projects"
-              className="border border-white px-5 py-2 rounded-md hover:bg-white hover:text-black transition"
+              className="border border-white px-8 py-4 rounded-md hover:bg-white hover:text-black transition"
             >
               View Projects
             </a>
@@ -44,12 +44,14 @@ export default function Home() {
 
         {/* Right: Profile Image */}
         <div className="mb-10 lg:mb-0 lg:w-1/2">
+        <div className="relative w-64 h-64 lg:w-72 lg:h-72 rounded-3xl border-4 border-blue-500 shadow-lg mx-auto overflow-hidden">
           <img
-            src="/eli.png"
+            src="/image2.png"
             alt="Elijah Munoz"
-            className="rounded-full border-4 border-blue-500 shadow-lg w-64 h-64 object-cover object-top mx-auto"
+            className="absolute inset-0 w-full h-full object-cover object-center"
           />
         </div>
+      </div>
       </section>
 
       {/* Other Sections */}
