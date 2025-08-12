@@ -42,18 +42,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right: Profile Image */}
-        <div className="mb-10 lg:mb-0 lg:w-1/2">
-        <div className="relative w-64 h-64 lg:w-72 lg:h-72 rounded-3xl border-4 border-blue-500 shadow-lg mx-auto overflow-hidden">
-          <img
-            src="/image2.png"
-            alt="Elijah Munoz"
-            className="absolute inset-0 w-full h-full object-cover object-center"
+       {/* Right: Profile Image */}
+      <div className="mb-10 lg:mb-0 lg:w-1/2 flex justify-center items-start mt-8"> 
+      <div className="relative w-64 h-64 lg:w-72 lg:h-72 rounded-3xl border-4 border-blue-500 shadow-lg mx-auto overflow-hidden">
+        <img
+          src="/img33.png"
+          alt="Elijah Munoz"
+          className="absolute inset-0 w-full h-full object-cover object-center"
           />
-        </div>
-      </div>
-      </section>
-
+        </div>  
+      </div> {/* Light Photo Attatched */}
+      </section>      
+       
       {/* Other Sections */}
       <About />
       <Experience />
