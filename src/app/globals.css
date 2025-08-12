@@ -91,3 +91,36 @@ body {
   color: #fff;
   animation: brandGlow 3.5s ease-in-out infinite;
 }
+/* === ✨ Mobile Phone Contact Card === */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem; /* more breathing room */
+    font-size: 0.95rem; /* slightly smaller text for better fit */
+  }
+
+  .project-card h3 {
+    font-size: 1.4rem; /* adjust title size */
+    margin-bottom: 0.8rem;
+  }
+
+  .project-card p {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+  }
+
+  .project-card .tools {
+    display: flex;
+    gap: 1rem; /* space between icons */
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-card .buttons {
+    flex-direction: column; /* stack buttons */
+    gap: 0.8rem;
+  }
+
+  .project-card button {
+    width: 100%;
+  }
+}
