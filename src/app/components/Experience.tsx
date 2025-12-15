@@ -7,6 +7,15 @@ export default function Experience() {
         <h2 className="text-4xl font-bold mb-12 text-center">Experience</h2>
 
         <div className="space-y-8">
+          {/* Experience Card 0 */}
+          <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 shadow-md"> 
+            <h3 className="text-2xl font-semibold mb-1">EM Software Solutions — Private Software Engineering Contractor </h3>
+            <p className="text-sm text-gray-400 mb-2">EM Software Solutions · 2025 – Present</p>
+            <p className="text-gray-300">
+                Built and deployed production-ready web applications for small businesses using Next.js, React, Node.js, and Vercel. Implemented automated booking systems, Google Sheets integrations, and transactional email alerts. Managed full deployment lifecycle including DNS, environment configuration, and serverless APIs. Delivered software actively used by real customers in production.
+            </p>
+          </div>
+
           {/* Experience Card 1 */}
           <div className="bg-zinc-900 border border-zinc-700 rounded-lg p-6 shadow-md">
             <h3 className="text-2xl font-semibold mb-1">Qualcomm CartOptics Software Engineer Student </h3>
